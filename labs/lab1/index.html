@@ -17,16 +17,17 @@
    
     <!-- Logo and Navigation Bar -->
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <div class="container">
       <!-- Brand -->
       <a class="navbar-brand" href="#">Coca Cola Story</a>
 
        <!-- Collapsible Navbar Menu Icon -->
-       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"> 
-            <span class="navbar-toggler-icon"></span>
-        </button> 
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="navbar-toggler-icon"></span>
+       </button> 
        
-        <!-- Link Menu item button to the links class navbar-collapse id selector #navbarSupportedContent -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Link Menu item button to the links class navbar-collapse selector -->
+        <div class="collapse navbar-collapse">
           <!-- The Links -->
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
@@ -47,10 +48,16 @@
                   <a class="dropdown-item" href="#">Sprite</a>
                 </div>
               </li>
-           </ul>
-         </div>
-     </nav>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+        </div>
+      </div>
+    </nav>
     
+    <br> <!-- Temporary break -->
+   
      <!-- This is the main contents of the page, its has a background image-->
     <div class="container-fluid main_contents">
       <h1>Hello World!</h1>
