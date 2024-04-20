@@ -306,9 +306,11 @@ p {
     }
 
     #main_3d_image {
-        background-image: url(../assets/images/main_3D_768.jpg);
+        background-image: url('/labs/lab1/Assets/images/main_3D.jpg');
         background-repeat: no-repeat;
         height: 288px;
+        width: auto;
+        
     }
 
     #main_text {
