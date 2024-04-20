@@ -15,12 +15,12 @@ No media query for `xs` since this is the default in Bootstrap
 /* Method to declare your own fonts */
 @font-face {
     font-family: cocaColaFont;
-    src: url(../assets/fonts/loki_cola/LOKICOLA.TTF);
+    src: url(../Assets/font/LOKICOLA.TTF);
 }
 
 @font-face {
     font-family: OpenSans;
-    src: url(../assets/fonts/Open_Sans/OpenSans-Regular.ttf);
+    src: url(../Assets/font/cocacola.ttf);
 }
 
 @font-face {
@@ -33,7 +33,7 @@ No media query for `xs` since this is the default in Bootstrap
 */
 
 body {
-    background-color: rgb(37, 169, 202);
+    background-color: rgb(240, 244, 245);
     }
 
 .main_contents {
@@ -59,7 +59,7 @@ p {
 
 /* CSS rules for the main_text IDs */
 #main_3d_image {
-    background-image: url("../assets/images/main_3D.jpg");
+    background-image: url("../labs/lab1/assets/images/main_3D.jpg");
     background-repeat: no-repeat;
     height: 200px;
 }
@@ -293,7 +293,7 @@ p {
 
     .fa-facebook-square:before {
         content: "\f082";
-        color: red;
+        color: rgb(112, 166, 228);
         font-size: 1em; 
     }
 
@@ -302,7 +302,7 @@ p {
 @media (min-width: 576px) {
 
     body {
-        background-color: rgb(202, 181, 181);
+        background-color: rgb(240, 244, 245);
     }
 
     #main_3d_image {
@@ -312,8 +312,18 @@ p {
     }
 
     #main_text {
-        float: right;
+        float: left;
         margin-top: 7%;
+    }
+
+    #main_text h2 {
+        color: crimson;
+        font-size: 30px;
+    }
+    
+    #main_text h3 {
+        color: rgb(2, 17, 17);
+        font-size:22px;
     }
 
     .card {
@@ -321,11 +331,11 @@ p {
         /* border-radius: .25rem;*/
         margin-top: 10px;
         margin-bottom: 10px;
-        background-color: rgb(202, 181, 181);
+        background-color: rgb(247, 210, 210);
     }
 
     .navbar_coca_cola {
-        background-color: grey; 
+        background-color: #080808; 
         min-height: 90px;
     }
 
@@ -360,7 +370,7 @@ p {
 @media (min-width: 768px) { 
     
     body {
-        background-color: rgb(218, 216, 148);
+        background-color: rgb(161, 216, 223);
     }
 
     #main_3d_image {
@@ -374,11 +384,11 @@ p {
         /* border-radius: .25rem;*/
         margin-top: 10px;
         margin-bottom: 10px;
-        background-color: rgb(218, 216, 148);
+        background-color: rgb(243, 243, 235);
     }
 
     #main_text {
-        float: right;
+        float: left;
         margin-top: 7%;
     }
 
@@ -388,7 +398,7 @@ p {
     }
     
     #main_text h3 {
-        color: darkcyan;
+        color: rgb(2, 17, 17);
         font-size:22px;
     }
     
@@ -441,11 +451,12 @@ p {
         margin-top: 45px;
         margin-bottom: 0px;
         padding-top: 0px;
-        padding-left: 8px;
+        padding-left: 3px;
+
     }
 
     .navbar_coca_cola {
-        background-color: grey; 
+        background-color: #760003; 
         min-height: 90px;
     }
 
@@ -477,7 +488,7 @@ p {
 @media (min-width: 992px) { 
     
     body {
-        background-color: rgb(185, 185, 178);
+        background-color: rgb(201, 203, 204);
     }
 
     #main_3d_image {
@@ -487,8 +498,8 @@ p {
     }
 
     #main_text {
-        float: right;
-        margin-top: 20%;
+        float: left;
+        margin-top: 7%;
     }
 
     #main_text h2 {
@@ -497,7 +508,17 @@ p {
     }
     
     #main_text h3 {
-        color: darkcyan;
+        color: rgb(2, 17, 17);
+        font-size:22px;
+    }
+
+    #main_text h2 {
+        color: crimson;
+        font-size: 30px;
+    }
+    
+    #main_text h3 {
+        color: rgb(0, 0, 0);
         font-size:22px;
     }
     
@@ -510,7 +531,7 @@ p {
         /* border-radius: .25rem;*/
         margin-top: 10px;
         margin-bottom: 10px;
-        background-color: rgb(185, 185, 178);
+        background-color: #ffffff;
     }
 
     .logo {
@@ -555,10 +576,11 @@ p {
         margin-bottom: 0px;
         padding-top: 65px;
         padding-left: 12px;
+    
     }
 
     .navbar_coca_cola {
-        background-color: grey; 
+        background-color: #000000; 
         min-height: 120px;
     }
 
