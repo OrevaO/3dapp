@@ -309,8 +309,7 @@ p {
         background-image: url('/labs/lab1/Assets/images/main_3D.jpg');
         background-repeat: no-repeat;
         height: 288px;
-        width: auto;
-        
+        width: 100%;  
     }
 
     #main_text {
