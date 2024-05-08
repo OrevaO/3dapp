@@ -50,6 +50,7 @@ p {
     /*font-family: 'Oswald', sans-serif;*/
     font-family: cocaColaFont;
     }
+
     /* Small devices (landscape phones, 576px and up)
     */
     @media (min-width: 576px) {... }  
@@ -169,7 +170,7 @@ p {
     /* CSS rule to overwrite the navbar-brand font hover color
     */
     .navbar_coca_cola .navbar-brand:hover {
-        color: rgb(58, 8, 238);
+        color: rgb(112, 238, 8);
     }
 
     /* NAVIGATION MENU
@@ -180,7 +181,7 @@ p {
     There is plenty more styling to do than indicated here, in mobile it still defaults to Bootstrap CSS on dropdown!
     */
     .navbar_coca_cola .navbar-nav > li > a {
-        color: white;  
+        color: rgb(255, 255, 255);  
     }
 
     /* CSS rule to overwrite the bootstrap.css text hover color on the navbar
@@ -199,8 +200,8 @@ p {
     .navbar_coca_cola .navbar-nav .nav-item > .active, 
     .navbar_coca_cola .navbar-nav > .active > a:hover, 
     .navbar_coca_cola .navbar-nav > .active > a:focus {
-        color:  rgb(43, 0, 110); /* Font color for active font */
-        background-color: #8ac3fd; /* Blue color for background */
+        color:  rgb(14, 6, 95); /* Font color for active font */
+        background-color: #fcfcfc; /* Blue color for background */
     }
 
     /* A set of CSS rules to change the Bootstrap defaults for the menu link text color, hover, background, focus
@@ -210,7 +211,7 @@ p {
     */
     .navbar_coca_cola .navbar-nav > li > a:hover, 
     .navbar_coca_cola  .navbar-nav > li > a:focus {
-        color: rgb(43, 0, 110);  
+        color: rgb(163, 214, 80);  
     }
 
     /* These next two CSS rules control the style of the icon bar */
