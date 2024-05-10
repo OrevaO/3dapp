@@ -36,6 +36,15 @@ body {
     background-color: rgb(240, 244, 245);
     }
 
+.img-thumbnail {
+    padding: 0.25rem;
+    margin-top: 4px;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    max-width: 100%;
+    height: auto;
+}
 .main_contents {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -588,7 +597,7 @@ p {
 
     /* CSS rule to style the footer */
     .footer {
-        background-color: grey;
+        background-color: rgb(0, 0, 0);
         height: 75px;
     }
 
@@ -597,8 +606,8 @@ p {
     }
 
     .navbar-text > p {
-        color: rgb(12, 5, 3);
-        font-size: 23px;
+        color: rgb(197, 193, 193);
+        font-size: 18px;
     }
 
     .copyright {
