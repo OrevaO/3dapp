@@ -55,8 +55,8 @@ p {
     */
     @media (min-width: 576px) {... }  
 
-<div class="container main_contents">- 
-</div>
+    <div class="container main_contents">- 
+    </div>
 
 /* CSS rules for the main_text IDs */
 #main_3d_image {
@@ -361,18 +361,18 @@ p {
     }
     
     .gallery-header {
-        color: white;
+        color: rgb(0, 0, 0);
     }
     
     .gallery-header:hover {
-        color: green;
+        color: rgb(66, 204, 54);
         border: 1px solid transparent;
     }
     
     .model3D  {
         background-color: rgba(255, 255, 255, 0.0); /* Adjust the transparency to bring the color forward */
         border-radius: 5px;
-        border: 0px solid rgba(0, 0, 0, 1.0);
+        border: 1px solid rgb(214, 208, 208);
         padding: 2px;
         height: 200px;
     }
@@ -380,7 +380,7 @@ p {
     X3D, x3d {
         background-color: rgba(255, 255, 255, 0.0); /* Adjust the transparency to bring the color forward */
         border-radius: 5px;
-        border: 0px solid rgba(255, 0, 0, 1.0);
+        border: 0px solid rgb(0, 0, 0);
         width: 100%;
         height: 100%
         
@@ -433,14 +433,27 @@ p {
         background-color: #94d874; 
         height: 60px;
     }
+    .footerInfo {
+        margin-top: 10px;
+    }
+    
+    .footerInfo .navbar-text {
+        display: inline;
+    }
+
+    .footerInfo .navbar-text > p {
+        color: rgb(228, 75, 15);
+        font-size: 10px;
+    }
 
     .navbar-text > a {
         font-size: 12px;
 
     }
-
-    .navbar-text > p {
-        color: rgb(228, 75, 15);
+    /* Copyright CSS rules */
+    .copyright > p {
+        color: rgb(255, 255, 255);
+        font-size: 12px;
     }
 
     .copyright {
@@ -451,7 +464,16 @@ p {
         padding-top: 5px;
         /* border: 1px solid rgba(0,0,0,.125); */
     }
+    .btn-responsive {
+        padding: px 9px;
+        font-size: 90%;
+        line-height: 1.2;
+        white-space: normal !important;
+    }
 
+    .model3D  {
+        height: 310px;
+    }
 }
 
 /* Medium devices (tablets, 768px and up)
@@ -570,8 +592,16 @@ p {
     .social {
     padding-top: 0px;
     }
+    .btn-responsive {
+        padding: 4px 9px;
+        font-size: 130%;
+        line-height: 1.2;
+        white-space: normal !important;
+    }
+    .model3D  {
+        height: 380px;
+    }
 }
-
 /* Large devices (desktops, 992px and up)
 */
 @media (min-width: 992px) { 
@@ -695,10 +725,69 @@ p {
     .social {
         padding-top: 7px;
     }
+    .btn-responsive {
+        padding: 4px 9px;
+        font-size: 150%;
+        line-height: 1.2;
+        white-space: normal !important;
+    }
+    .model3D  {
+        height: 500px;
+    }
 }
 
-/* Extra large devices (large desktops, 1200px and up)
-*/
-@media (min-width: 1200px) {   
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    #main_3d_image {
+        height: 600px;
+    }
+
+    #fanta_3d_image {
+        height: 600px;
+    }
+
+    .footer {
+        background-color: rgb(159, 182, 120); /* Set navbar footer background color same as header */
+    }
+
+    body {
+        background-color: rgb(228, 240, 208);
+    }
+
+    .card {
+        background-color: rgb(228, 240, 208);
+    }
+
+    .model3D  {
+        height: 600px;
+    }
 
 }
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+    #main_3d_image {
+        height: 700px;
+    }
+
+    #main_3d_image {
+        height: 700px;
+    }
+
+    .footer {
+        background-color: rgb(70, 97, 25); /* Set navbar footer background color same as header */
+    }
+
+    body {
+        background-color: rgb(232, 236, 163);
+    }
+
+    .card {
+        background-color: rgb(232, 236, 163);
+    }
+    .model3D  {
+        height: 700px;
+    }
+
+
+ }
