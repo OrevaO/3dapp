@@ -60,7 +60,7 @@ p {
 
 /* CSS rules for the main_text IDs */
 #main_3d_image {
-    background-image: url("../labs/lab1/assets/images/main_3D.jpg");
+    background-image: url("../lab1/assets/images/Cocacola_3_can_assignment_992");
     background-repeat: no-repeat;
     height: 200px;
 }
@@ -394,7 +394,7 @@ p {
     }
 
     #main_3d_image {
-        background-image: url('/labs/lab1/Assets/images/main_3D.jpg');
+        background-image: url('..//lab1/Assets/images/Cocacola_3_can_assignment_992.jpg');
         background-repeat: no-repeat;
         height: 288px;
         width: 100%;  
