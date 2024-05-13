@@ -15,12 +15,12 @@ No media query for `xs` since this is the default in Bootstrap
 /* Method to declare your own fonts */
 @font-face {
     font-family: cocaColaFont;
-    src: url(../assets/fonts/loki_cola/LOKICOLA.TTF);
+    src: url(../Assets/font/LOKICOLA.TTF);
 }
 
 @font-face {
     font-family: OpenSans;
-    src: url(../assets/fonts/Open_Sans/OpenSans-Regular.ttf);
+    src: url(../Assets/font/cocacola.ttf);
 }
 
 @font-face {
@@ -33,7 +33,7 @@ No media query for `xs` since this is the default in Bootstrap
 */
 
 body {
-    background-color: rgb(37, 169, 202);
+    background-color: rgb(240, 244, 245);
     }
 
 .main_contents {
@@ -50,16 +50,17 @@ p {
     /*font-family: 'Oswald', sans-serif;*/
     font-family: cocaColaFont;
     }
+
     /* Small devices (landscape phones, 576px and up)
     */
     @media (min-width: 576px) {... }  
 
-<div class="container main_contents">- 
-</div>
+    <div class="container main_contents">- 
+    </div>
 
 /* CSS rules for the main_text IDs */
 #main_3d_image {
-    background-image: url("../assets/images/main_3D.jpg");
+    background-image: url(..//Assets/images/Cocacola_3_can_assignment.jpg);
     background-repeat: no-repeat;
     height: 200px;
 }
@@ -169,7 +170,7 @@ p {
     /* CSS rule to overwrite the navbar-brand font hover color
     */
     .navbar_coca_cola .navbar-brand:hover {
-        color: green;
+        color: rgb(112, 238, 8);
     }
 
     /* NAVIGATION MENU
@@ -180,14 +181,14 @@ p {
     There is plenty more styling to do than indicated here, in mobile it still defaults to Bootstrap CSS on dropdown!
     */
     .navbar_coca_cola .navbar-nav > li > a {
-        color: white;  
+        color: rgb(255, 255, 255);  
     }
 
     /* CSS rule to overwrite the bootstrap.css text hover color on the navbar
     */
     .navbar_coca_cola .navbar-nav > li > a:hover, 
     .navbar_coca_cola .navbar-nav > li > a:focus {
-        color: green;  
+        color: rgb(43, 0, 110);  
     }
 
     .navbar_coca_cola .navbar-nav .nav-item {
@@ -199,8 +200,8 @@ p {
     .navbar_coca_cola .navbar-nav .nav-item > .active, 
     .navbar_coca_cola .navbar-nav > .active > a:hover, 
     .navbar_coca_cola .navbar-nav > .active > a:focus {
-        color:  #760003; /* Font color for active font */
-        background-color: #3399ff; /* Blue color for background */
+        color:  rgb(14, 6, 95); /* Font color for active font */
+        background-color: #fcfcfc; /* Blue color for background */
     }
 
     /* A set of CSS rules to change the Bootstrap defaults for the menu link text color, hover, background, focus
@@ -210,7 +211,7 @@ p {
     */
     .navbar_coca_cola .navbar-nav > li > a:hover, 
     .navbar_coca_cola  .navbar-nav > li > a:focus {
-        color: green;  
+        color: rgb(163, 214, 80);  
     }
 
     /* These next two CSS rules control the style of the icon bar */
@@ -293,27 +294,125 @@ p {
 
     .fa-facebook-square:before {
         content: "\f082";
-        color: red;
+        color: rgb(112, 166, 228);
         font-size: 1em; 
     }
+    .img-thumbnail {
+        padding: 0.25rem;
+        margin-top: 4px;
+        background-color: #fff;
+        border: 1px solid #dee2e6;
+        border-radius: 0.25rem;
+        max-width: 100%;
+        height: auto;
+    }
+    
+    /* Lifted from the bootsrap.css file, and modified to emulate the nav-bar menu styling */
+    .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+        color:  #760003; /* Font color for active font */
+        background-color: #3399ff; /* Blue color for background */
+        border-color: #dee2e6 #dee2e6 #fff;
+    }
 
+    .nav-tabs .nav-link {
+        color: rgb(255, 11, 11);  
+        border: 1px solid transparent;
+        border-top-left-radius: 0.25rem;
+        border-top-right-radius: 0.25rem;
+    }
+
+    /* Added this to emulate the nav-bar link styling */
+    .nav-tabs .nav-link:hover {
+        color: rgb(66, 204, 54);
+        border: 1px solid transparent;
+    }
+
+    .camera-btns {
+        /* background-color: rgba(0, 0, 255, 0.3);  */
+        border-color: black; 
+        border-style: solid;
+        border-width: 0px;
+        margin-top: 0px;
+        padding: 0px;
+    }
+    
+    .camera-btns > p  {
+        font-size: 15px;
+        color: red;
+        padding-left: 0px;
+        font-weight: 900; 
+    }
+    
+    .camera-font {
+        font-weight: 400;   
+        color: white;
+    }
+    
+    .camera-font:hover {
+        font-weight: 700;   
+        color: rgb(3, 3, 3);
+    }
+    
+    .btn-responsive {
+        padding: 4px 9px;
+        font-size: 60%;
+        line-height: 1.2;
+        white-space: normal !important;
+    }
+    
+    .gallery-header {
+        color: rgb(0, 0, 0);
+    }
+    
+    .gallery-header:hover {
+        color: rgb(66, 204, 54);
+        border: 1px solid transparent;
+    }
+    
+    .model3D  {
+        background-color: rgba(255, 255, 255, 0.0); /* Adjust the transparency to bring the color forward */
+        border-radius: 5px;
+        border: 1px solid rgb(214, 208, 208);
+        padding: 2px;
+        height: 200px;
+    }
+
+    X3D, x3d {
+        background-color: rgba(255, 255, 255, 0.0); /* Adjust the transparency to bring the color forward */
+        border-radius: 5px;
+        border: 0px solid rgb(0, 0, 0);
+        width: 100%;
+        height: 100%
+        
+    }
 /* Small devices (landscape phones, 576px and up)
 */
 @media (min-width: 576px) {
 
     body {
-        background-color: rgb(202, 181, 181);
+        background-color: rgb(240, 244, 245);
     }
 
     #main_3d_image {
-        background-image: url(../assets/images/main_3D_768.jpg);
+        background-image: url(..//Assets/images/Cocacola_3_can_assignment_768.jpg);
         background-repeat: no-repeat;
         height: 288px;
+        width: 100%;  
     }
 
     #main_text {
-        float: right;
+        float: left;
         margin-top: 7%;
+    }
+
+    #main_text h2 {
+        color: crimson;
+        font-size: 30px;
+    }
+    
+    #main_text h3 {
+        color: rgb(2, 17, 17);
+        font-size:22px;
     }
 
     .card {
@@ -321,11 +420,11 @@ p {
         /* border-radius: .25rem;*/
         margin-top: 10px;
         margin-bottom: 10px;
-        background-color: rgb(202, 181, 181);
+        background-color: rgb(247, 210, 210);
     }
 
     .navbar_coca_cola {
-        background-color: grey; 
+        background-color: #080808; 
         min-height: 90px;
     }
 
@@ -334,14 +433,27 @@ p {
         background-color: #94d874; 
         height: 60px;
     }
+    .footerInfo {
+        margin-top: 10px;
+    }
+    
+    .footerInfo .navbar-text {
+        display: inline;
+    }
+
+    .footerInfo .navbar-text > p {
+        color: rgb(228, 75, 15);
+        font-size: 10px;
+    }
 
     .navbar-text > a {
         font-size: 12px;
 
     }
-
-    .navbar-text > p {
-        color: rgb(228, 75, 15);
+    /* Copyright CSS rules */
+    .copyright > p {
+        color: rgb(255, 255, 255);
+        font-size: 12px;
     }
 
     .copyright {
@@ -352,7 +464,16 @@ p {
         padding-top: 5px;
         /* border: 1px solid rgba(0,0,0,.125); */
     }
+    .btn-responsive {
+        padding: px 9px;
+        font-size: 90%;
+        line-height: 1.2;
+        white-space: normal !important;
+    }
 
+    .model3D  {
+        height: 310px;
+    }
 }
 
 /* Medium devices (tablets, 768px and up)
@@ -360,11 +481,11 @@ p {
 @media (min-width: 768px) { 
     
     body {
-        background-color: rgb(218, 216, 148);
+        background-color: rgb(161, 216, 223);
     }
 
     #main_3d_image {
-        background-image: url(../assets/images/main_3D_970.jpg);
+        background-image: url(..//Assets/images/Cocacola_3_can_assignment_992.jpg);
         background-repeat: no-repeat;
         height: 363px;
     }
@@ -374,11 +495,11 @@ p {
         /* border-radius: .25rem;*/
         margin-top: 10px;
         margin-bottom: 10px;
-        background-color: rgb(218, 216, 148);
+        background-color: rgb(243, 243, 235);
     }
 
     #main_text {
-        float: right;
+        float: left;
         margin-top: 7%;
     }
 
@@ -388,7 +509,7 @@ p {
     }
     
     #main_text h3 {
-        color: darkcyan;
+        color: rgb(2, 17, 17);
         font-size:22px;
     }
     
@@ -441,11 +562,12 @@ p {
         margin-top: 45px;
         margin-bottom: 0px;
         padding-top: 0px;
-        padding-left: 8px;
+        padding-left: 3px;
+
     }
 
     .navbar_coca_cola {
-        background-color: grey; 
+        background-color: #760003; 
         min-height: 90px;
     }
 
@@ -470,25 +592,33 @@ p {
     .social {
     padding-top: 0px;
     }
+    .btn-responsive {
+        padding: 4px 9px;
+        font-size: 130%;
+        line-height: 1.2;
+        white-space: normal !important;
+    }
+    .model3D  {
+        height: 380px;
+    }
 }
-
 /* Large devices (desktops, 992px and up)
 */
 @media (min-width: 992px) { 
     
     body {
-        background-color: rgb(185, 185, 178);
+        background-color: rgb(201, 203, 204);
     }
 
     #main_3d_image {
-        background-image: url(../assets/images/main_3D_1400.jpg);
+        background-image: url(..//Assets/images/Cocacola_3_can_assignment_1200.jpg);
         background-repeat: no-repeat;
         height: 100%;
     }
 
     #main_text {
-        float: right;
-        margin-top: 20%;
+        float: left;
+        margin-top: 7%;
     }
 
     #main_text h2 {
@@ -497,7 +627,17 @@ p {
     }
     
     #main_text h3 {
-        color: darkcyan;
+        color: rgb(2, 17, 17);
+        font-size:22px;
+    }
+
+    #main_text h2 {
+        color: crimson;
+        font-size: 30px;
+    }
+    
+    #main_text h3 {
+        color: rgb(0, 0, 0);
         font-size:22px;
     }
     
@@ -510,7 +650,7 @@ p {
         /* border-radius: .25rem;*/
         margin-top: 10px;
         margin-bottom: 10px;
-        background-color: rgb(185, 185, 178);
+        background-color: #ffffff;
     }
 
     .logo {
@@ -555,16 +695,17 @@ p {
         margin-bottom: 0px;
         padding-top: 65px;
         padding-left: 12px;
+    
     }
 
     .navbar_coca_cola {
-        background-color: grey; 
+        background-color: #000000; 
         min-height: 120px;
     }
 
     /* CSS rule to style the footer */
     .footer {
-        background-color: grey;
+        background-color: rgb(0, 0, 0);
         height: 75px;
     }
 
@@ -573,8 +714,8 @@ p {
     }
 
     .navbar-text > p {
-        color: rgb(12, 5, 3);
-        font-size: 23px;
+        color: rgb(197, 193, 193);
+        font-size: 18px;
     }
 
     .copyright {
@@ -584,10 +725,69 @@ p {
     .social {
         padding-top: 7px;
     }
+    .btn-responsive {
+        padding: 4px 9px;
+        font-size: 150%;
+        line-height: 1.2;
+        white-space: normal !important;
+    }
+    .model3D  {
+        height: 500px;
+    }
 }
 
-/* Extra large devices (large desktops, 1200px and up)
-*/
-@media (min-width: 1200px) {   
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    #main_3d_image {
+        height: 600px;
+    }
+
+    #fanta_3d_image {
+        height: 600px;
+    }
+
+    .footer {
+        background-color: rgb(159, 182, 120); /* Set navbar footer background color same as header */
+    }
+
+    body {
+        background-color: rgb(228, 240, 208);
+    }
+
+    .card {
+        background-color: rgb(228, 240, 208);
+    }
+
+    .model3D  {
+        height: 600px;
+    }
 
 }
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+    #main_3d_image {
+        height: 700px;
+    }
+
+    #main_3d_image {
+        height: 700px;
+    }
+
+    .footer {
+        background-color: rgb(70, 97, 25); /* Set navbar footer background color same as header */
+    }
+
+    body {
+        background-color: rgb(232, 236, 163);
+    }
+
+    .card {
+        background-color: rgb(232, 236, 163);
+    }
+    .model3D  {
+        height: 700px;
+    }
+
+
+ }
