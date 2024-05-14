@@ -13,8 +13,8 @@ function swap(selected)
 	<!-- First do not display all div id contents -->	
 	document.getElementById('home').style.display = 'none';
 	document.getElementById('coke').style.display = 'none';
+	document.getElementById('fanta').style.display = 'none';
 	document.getElementById('sprite').style.display = 'none';
-	document.getElementById('pepper').style.display = 'none';
 	
 	<!-- Then display the selected div id contents -->
 	document.getElementById(selected).style.display = 'block';
@@ -46,8 +46,8 @@ function changeColor(newColor) {
 	<!-- Navigation menu -->
 	<p> <a href="javascript:swap('home')">Home</a> |
     	<a href="javascript:swap('coke')">Coca Cola</a> |
-        <a href="javascript:swap('sprite')">Sprite</a> |
-        <a href="javascript:swap('pepper')">Dr Pepper</a>
+        <a href="javascript:swap('fanta')">Fanta</a> |
+        <a href="javascript:swap('sprite')">Sprite</a>
     </p>
    
     <!--Single page contents, each set of contents in a container div    	.
@@ -56,8 +56,8 @@ function changeColor(newColor) {
     	first ensuring all pages are not displayed, then displaying the selected conetnts as a block element-->
     <div id="home"><b>Home:</b> Welcome to my basic 3D App. </div>
     <div id="coke" style="display:none;"><b>Coca Cola:</b> Check out my Coke 3D model. </div>
-    <div id="sprite" style="display:none;"><b>Sprite:</b> Check out my Sprite 3D model. </div>
-    <div id="pepper" style="display:none;"><b>Dr Pepper:</b> Check out my Dr Pepper 3D model. </div>
+    <div id="fanta" style="display:none;"><b>Fanta:</b> Check out my Sprite 3D model. </div>
+    <div id="pepper" style="display:none;"><b>Sprite:</b> Check out my Dr Pepper 3D model. </div>
 
     <!-- Click to activate the counter -->
     <p>Click <a href='javascript:countUp()'>here</a> to count: 
