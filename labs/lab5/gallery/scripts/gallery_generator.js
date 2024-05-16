@@ -21,19 +21,18 @@ $(document).ready(function() {
 			// Response handler code
 			//alert(xmlHttp.responseText);
 			response = xmlHttp.responseText.split("~");
-			htmlCode += '<tr>';
+			// Loop round the response array
 			for (var i=0;i<response.length;i++) {
-				htmlCode += '<td id="gallery_cell">';
-				htmlCode += '<a href="' + 'images/' + response[i] +'">';
-				htmlCode += '<img src="images/' + response[i] + '" id="image_thumbnail"/>';
-				htmlCode += '</a>';
-				htmlCode += '</td>';
-				if(((i+1)%numberOfColumns) == 0) {
-					htmlCode += '</tr><tr>';
-				}
+				// Handeler to build the HTML string
+				// Use this to provide a link to the image
+				htmlCode += '<a href="assets/images'+ response[i] +' ">';
+				htmlCode += '<img class="card-img-top img-thumbnail" src="assets/images' + response[i] + '"/>';
+				htmlCode += '</a>';			
 			}
-			htmlCode += '</tr>';
-			document.getElementById('gallery').innerHTML = htmlCode;
+			// Return the HTML string to each of the 3 3D App element blocks, coke, fanta and sprite galleries
+			document.getElementById('gallery_coke').innerHTML = htmlCode;
+			document.getElementById('gallery_fanta').innerHTML = htmlCode;
+			document.getElementById('gallery_sprite').innerHTML = htmlCode;
 		}
 	}
 });
